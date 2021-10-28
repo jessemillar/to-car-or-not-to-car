@@ -1,5 +1,3 @@
-# To Car or Not to Car
-
 ## Table of Contents
 <!-- vim-markdown-toc GFM -->
 
