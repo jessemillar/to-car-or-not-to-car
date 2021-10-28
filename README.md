@@ -9,20 +9,22 @@
 
 ```mermaid
 flowchart TB
-    subgraph subNewCar[Should I buy a new car?]
-        direction TB
-        carNeeds[Does your car do everything you need it to?]
-            carNeeds-->|Yes| carDriving
-            carNeeds-->|No| carNeedsResearch[Write a list of what you need a car to do] -->carDriving
-        carDriving[Does it drive how you want it to?]
-            carDriving-->|Yes| carLooks
-            carDriving-->|No| carDrivingResearch[Write a list of how you want your car to drive] -->carLooks
-        carLooks[Does it look how you want it to?]
-            carLooks-->|Yes| keepCurrentCar[Keep your current car if you answered yes to all the previous questions]
-            carLooks-->|No| carLooksResearch[Write a list of what you want your car to look like]
-    end
+carNeeds[Does your car do everything you need it to?]
+    carNeeds-->|Yes| carDriving
+    carNeeds-->|No| carNeedsResearch[Write a list of what you need a car to do] -->carDriving
+carDriving[Does it drive how you want it to?]
+    carDriving-->|Yes| carLooks
+    carDriving-->|No| carDrivingResearch[Write a list of how you want your car to drive] -->carLooks
+carLooks[Does it look how you want it to?]
+    carLooks-->|Yes| keepCurrentCar[Keep your current car if you answered yes to all the previous questions]
+    carLooks-->|No| carLooksResearch[Write a list of what you want your car to look like]
+```
+</details>
 
-    subgraph subBuyingNewCar[New Car]
+
+```
+flowchart TB
+     subgraph subBuyingNewCar[New Car]
         subgraph subFinances[Finances]
             financePlan[Do you have a finance plan?]
                 financePlan-->|Yes| subDrivetrain
@@ -63,10 +65,4 @@ flowchart TB
             modHappy-->|Yes| noMods[Don't mod your car]
             modHappy-->|No| MOD
     end
-
-    %% Describe the overall flow of the diagram
-    subNewCar --> subShouldMod
-    %%subNewCar --> subBuyingNewCar --> subFinances --> subNewOrUsed --> subColor --> subShouldMod
 ```
-</details>
-
