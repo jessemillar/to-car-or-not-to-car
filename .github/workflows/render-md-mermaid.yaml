@@ -10,6 +10,9 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
+      - name: Remove old images
+        run: rm *[.svg,.png]
+
       - name: Render images for every Mermaid diagram in all Markdown files (*.md) in the repo
         uses: nielsvaneck/render-md-mermaid@v2
 
