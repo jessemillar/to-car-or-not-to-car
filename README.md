@@ -30,7 +30,7 @@ carDriving[Does it drive how you want it to?]
 carLooks[Does it look how you want it to?]
     carLooks-->|Yes| keepCurrentCar[Keep your current car if you answered yes to all the previous questions]
     carLooks-->|No| carLooksResearch[Write a list of what you want your car to look like] -->considerNew
-considerNew[Consider buy a new car is you answered no to some of the above questions]
+considerNew[Consider buying a new car if you answered no to some of the above questions]
 ```
 </details>
 
@@ -118,6 +118,12 @@ colorIsBoring[Is the color you're considering black, white, or red?]
 flowchart TB
 modHappy[Are you happy with your car currently?]
     modHappy-->|Yes| noMods[Don't mod your car]
-    modHappy-->|No| MOD
+    modHappy-->|No| whichMod[What are you unhappy with?]
+        whichMod-->|Acceleration| newEngine[Consider an engine swap]
+        whichMod-->|Handling| suspension[Consider upgrading your suspension]
+        whichMod-->|Looks| whichLooks[What don't you like?]
+            whichLooks-->|Rims| newRims[Consider new rims]
+            whichLooks-->|Ride height| suspension
+            whichLooks-->|Color| newColor[Consider a vinyl wrap]
 ```
 </details>
