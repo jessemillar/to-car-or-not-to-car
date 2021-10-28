@@ -1,3 +1,9 @@
+# To Car or Not to Car
+
+![Test Diagram](1.png)
+<details>
+<summary>diagram source</summary>
+```mermaid
 flowchart TB
     subgraph subNewCar[Should I buy a new car?]
         direction TB
@@ -57,3 +63,6 @@ flowchart TB
     %% Describe the overall flow of the diagram
     subNewCar --> subShouldMod
     subNewCar --> subBuyingNewCar --> subFinances --> subNewOrUsed --> subColor --> subShouldMod
+```
+</details>
+
