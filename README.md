@@ -3,7 +3,7 @@
 ![Test Diagram](1.png)
 <details>
     <summary>diagram source</summary>
-    The following code block renders using [Mermaid](https://mermaid-js.github.io/mermaid/#/).
+    The following code block renders the above diagram using <a href="https://mermaid-js.github.io/mermaid/#/">Mermaid</a>.
 
 ```mermaid
 flowchart TB
