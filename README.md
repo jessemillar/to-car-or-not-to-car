@@ -40,7 +40,7 @@ considerNew[Consider buying a new car if you answered no to some of the above qu
 
 ```mermaid
 flowchart TB
-financePlan[Do you have a finance plan?]
+financePlan[Do you have a finance plan that accounts for car payments and insurance?]
     financePlan-->|Yes| Continue
     financePlan-->|No| noFinancePlan[Figure that out before thinking about cars]
 ```
