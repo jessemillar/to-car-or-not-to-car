@@ -1,10 +1,24 @@
 # To Car or Not to Car
 
+## Table of Contents
+<!-- vim-markdown-toc GFM -->
+
+* [1. Should you buy a new car?](#1-should-you-buy-a-new-car)
+* [2. Finances](#2-finances)
+* [3. Drivetrain](#3-drivetrain)
+* [4. Subaru](#4-subaru)
+* [5. Should you buy a new or used car](#5-should-you-buy-a-new-or-used-car)
+* [6. What color for paint, accessories, wraps, etc.?](#6-what-color-for-paint-accessories-wraps-etc)
+* [7. Should you mod your car?](#7-should-you-mod-your-car)
+
+<!-- vim-markdown-toc -->
+
 ## 1. Should you buy a new car?
 ![Should you buy a new car?](1.png)
 <details>
     <summary>diagram source</summary>
     The following code block renders the above diagram using <a href="https://mermaid-js.github.io/mermaid/#/">Mermaid</a>.
+
 ```mermaid
 flowchart TB
 carNeeds[Does your car do everything you need it to?]
@@ -25,6 +39,7 @@ considerNew[Consider buy a new car is you answered no to some of the above quest
 <details>
     <summary>diagram source</summary>
     The following code block renders the above diagram using <a href="https://mermaid-js.github.io/mermaid/#/">Mermaid</a>.
+
 ```mermaid
 flowchart TB
 financePlan[Do you have a finance plan?]
@@ -38,6 +53,7 @@ financePlan[Do you have a finance plan?]
 <details>
     <summary>diagram source</summary>
     The following code block renders the above diagram using <a href="https://mermaid-js.github.io/mermaid/#/">Mermaid</a>.
+
 ```mermaid
 flowchart TB
 awd[Do you want all wheel drive?]
@@ -51,6 +67,7 @@ awd[Do you want all wheel drive?]
 <details>
     <summary>diagram source</summary>
     The following code block renders the above diagram using <a href="https://mermaid-js.github.io/mermaid/#/">Mermaid</a>.
+
 ```mermaid
 flowchart TB
 subaruSporty[Do you want a sportscar?]
@@ -66,6 +83,7 @@ subaruSporty[Do you want a sportscar?]
 <details>
     <summary>diagram source</summary>
     The following code block renders the above diagram using <a href="https://mermaid-js.github.io/mermaid/#/">Mermaid</a>.
+
 ```mermaid
 flowchart TB
 willMod[Do you plan on doing mods?]
@@ -81,6 +99,7 @@ willMod[Do you plan on doing mods?]
 <details>
     <summary>diagram source</summary>
     The following code block renders the above diagram using <a href="https://mermaid-js.github.io/mermaid/#/">Mermaid</a>.
+
 ```mermaid
 flowchart TB
 colorIsBoring[Is the color you're considering black, white, or red?]
@@ -94,6 +113,7 @@ colorIsBoring[Is the color you're considering black, white, or red?]
 <details>
     <summary>diagram source</summary>
     The following code block renders the above diagram using <a href="https://mermaid-js.github.io/mermaid/#/">Mermaid</a>.
+
 ```mermaid
 flowchart TB
 modHappy[Are you happy with your car currently?]
