@@ -57,12 +57,12 @@ flowchart TB
     subgraph subShouldMod[Should you mod your car?]
         modHappy[Are you happy with your car currently?]
             modHappy-->|Yes| noMods[Don't mod your car]
-            modHappy-->|No|
+            modHappy-->|No| MOD
     end
 
     %% Describe the overall flow of the diagram
     subNewCar --> subShouldMod
-    subNewCar --> subBuyingNewCar --> subFinances --> subNewOrUsed --> subColor --> subShouldMod
+    %%subNewCar --> subBuyingNewCar --> subFinances --> subNewOrUsed --> subColor --> subShouldMod
 ```
 </details>
 
