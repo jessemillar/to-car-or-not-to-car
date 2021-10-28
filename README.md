@@ -5,7 +5,6 @@
 <details>
     <summary>diagram source</summary>
     The following code block renders the above diagram using <a href="https://mermaid-js.github.io/mermaid/#/">Mermaid</a>.
-
 ```mermaid
 flowchart TB
 carNeeds[Does your car do everything you need it to?]
@@ -26,7 +25,6 @@ considerNew[Consider buy a new car is you answered no to some of the above quest
 <details>
     <summary>diagram source</summary>
     The following code block renders the above diagram using <a href="https://mermaid-js.github.io/mermaid/#/">Mermaid</a>.
-
 ```mermaid
 flowchart TB
 financePlan[Do you have a finance plan?]
@@ -35,44 +33,71 @@ financePlan[Do you have a finance plan?]
 ```
 </details>
 
-```
+## 3. Drivetrain
+![Drivetrain](3.png)
+<details>
+    <summary>diagram source</summary>
+    The following code block renders the above diagram using <a href="https://mermaid-js.github.io/mermaid/#/">Mermaid</a>.
+```mermaid
 flowchart TB
-     subgraph subBuyingNewCar[New Car]
-        subgraph subFinances[Finances]
-        end
-
-        subgraph subDrivetrain[Drivetrain/Transmission]
-            awd[Do you want all wheel drive?]
-                awd -->|Yes| subSubaru
-                awd -->|No| noAwd[Research makes and models based on the criteria you found above]
-        end
-
-        subgraph subSubaru[Subaru]
-            subaruSporty[Do you want a sportscar?]
-                subaruSporty -->|Yes| subaruExpense[Expensive or cheap?]
-                    subaruExpense -->|Cheap| WRX
-                    subaruExpense -->|Expensive| STI
-                subaruSporty -->|No| Crosstrek
-        end
-
-        subgraph subNewOrUsed[New or Used]
-            willMod[Do you plan on doing mods?]
-                willMod -->|Yes| voidWarrantee[Would those mods void a warrantee?]
-                    voidWarrantee -->|Yes| Used
-                    voidWarrantee -->|No| New
-                willMod -->|No| New
-        end
-
-        subgraph subColor[Car Color/Paint/Accents]
-            colorIsBoring[Is the color you're considering black, white, or red?]
-                colorIsBoring -->|Yes| colorBoringAnswer[I wouldn't drive it personally]
-                colorIsBoring -->|No| colorExcitingAnswer[BUY BUY BUY]
-        end
-    end
-
-    subgraph subShouldMod[Should you mod your car?]
-        modHappy[Are you happy with your car currently?]
-            modHappy-->|Yes| noMods[Don't mod your car]
-            modHappy-->|No| MOD
-    end
+awd[Do you want all wheel drive?]
+    awd -->|Yes| subaru[Subaru is your best bet]
+    awd -->|No| noAwd[Research makes and models based on the criteria you found above]
 ```
+</details>
+
+## 4. Subaru
+![Subaru](4.png)
+<details>
+    <summary>diagram source</summary>
+    The following code block renders the above diagram using <a href="https://mermaid-js.github.io/mermaid/#/">Mermaid</a>.
+```mermaid
+flowchart TB
+subaruSporty[Do you want a sportscar?]
+    subaruSporty -->|Yes| subaruExpense[Expensive or cheap?]
+        subaruExpense -->|Cheap| WRX
+        subaruExpense -->|Expensive| STI
+    subaruSporty -->|No| Crosstrek
+```
+</details>
+
+## 5. Should you buy a new or used car
+![New or used](5.png)
+<details>
+    <summary>diagram source</summary>
+    The following code block renders the above diagram using <a href="https://mermaid-js.github.io/mermaid/#/">Mermaid</a>.
+```mermaid
+flowchart TB
+willMod[Do you plan on doing mods?]
+    willMod -->|Yes| voidWarrantee[Would those mods void a warrantee?]
+        voidWarrantee -->|Yes| Used
+        voidWarrantee -->|No| New
+    willMod -->|No| New
+```
+</details>
+
+## 6. What color for paint, accessories, wraps, etc.?
+![Color](6.png)
+<details>
+    <summary>diagram source</summary>
+    The following code block renders the above diagram using <a href="https://mermaid-js.github.io/mermaid/#/">Mermaid</a>.
+```mermaid
+flowchart TB
+colorIsBoring[Is the color you're considering black, white, or red?]
+    colorIsBoring -->|Yes| colorBoringAnswer[I wouldn't drive it personally]
+    colorIsBoring -->|No| colorExcitingAnswer[BUY BUY BUY]
+```
+</details>
+
+## 7. Should you mod your car?
+![Mods](7.png)
+<details>
+    <summary>diagram source</summary>
+    The following code block renders the above diagram using <a href="https://mermaid-js.github.io/mermaid/#/">Mermaid</a>.
+```mermaid
+flowchart TB
+modHappy[Are you happy with your car currently?]
+    modHappy-->|Yes| noMods[Don't mod your car]
+    modHappy-->|No| MOD
+```
+</details>
