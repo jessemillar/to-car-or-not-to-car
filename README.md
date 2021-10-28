@@ -1,6 +1,8 @@
 # To Car or Not to Car
 
-![Test Diagram](1.png)
+## 1. Should you buy a new car?
+
+![Should you buy a new car?](1.png)
 <details>
     <summary>diagram source</summary>
     The following code block renders the above diagram using <a href="https://mermaid-js.github.io/mermaid/#/">Mermaid</a>.
