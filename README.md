@@ -2,7 +2,9 @@
 
 ![Test Diagram](1.png)
 <details>
-<summary>diagram source</summary>
+    <summary>diagram source</summary>
+    The following code block renders using [Mermaid](https://mermaid-js.github.io/mermaid/#/).
+
 ```mermaid
 flowchart TB
     subgraph subNewCar[Should I buy a new car?]
